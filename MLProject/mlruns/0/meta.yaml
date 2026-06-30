@@ -1,6 +1,6 @@
-artifact_location: file:///C:/Users/Miqdad/Downloads/SMSML_Miqdad/Workflow-CI/MLProject/mlruns/0
-creation_time: 1782808767166
+artifact_location: file:///home/runner/work/Workflow-CI/Workflow-CI/MLProject/mlruns/0
+creation_time: 1782810915499
 experiment_id: '0'
-last_update_time: 1782808767166
+last_update_time: 1782810915499
 lifecycle_stage: active
 name: Default
