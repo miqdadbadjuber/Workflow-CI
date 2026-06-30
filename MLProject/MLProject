@@ -1,0 +1,9 @@
+name: student_performance_classification
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: str, default: "student_performance_preprocessing"}
+    command: "python modelling.py"

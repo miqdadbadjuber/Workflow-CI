@@ -1,0 +1,16 @@
+digest: 593e2909
+name: dataset
+profile: '{"num_rows": 1913, "num_elements": 24869}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "Age", "required": true},
+  {"type": "long", "name": "Gender", "required": true}, {"type": "long", "name": "Ethnicity",
+  "required": true}, {"type": "long", "name": "ParentalEducation", "required": true},
+  {"type": "double", "name": "StudyTimeWeekly", "required": true}, {"type": "double",
+  "name": "Absences", "required": true}, {"type": "long", "name": "Tutoring", "required":
+  true}, {"type": "long", "name": "ParentalSupport", "required": true}, {"type": "long",
+  "name": "Extracurricular", "required": true}, {"type": "long", "name": "Sports",
+  "required": true}, {"type": "long", "name": "Music", "required": true}, {"type":
+  "long", "name": "Volunteering", "required": true}, {"type": "double", "name": "GPA",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "Miqdad", "mlflow.source.name": "modelling.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
