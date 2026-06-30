@@ -15,8 +15,8 @@ flavors:
     sklearn_version: 1.9.0
 mlflow_version: 2.19.0
 model_size_bytes: 6906589
-model_uuid: 0722a81310704442b6b9bd4bbf8263ba
-run_id: 7721fa1ccf4a4e38b677b32893cf57c7
+model_uuid: 83329e533b224cd6a9a956a53293773a
+run_id: 1a46aee7949f4c4e97b9c0cdc9f96b70
 signature:
   inputs: '[{"type": "double", "name": "Age", "required": true}, {"type": "long",
     "name": "Gender", "required": true}, {"type": "long", "name": "Ethnicity", "required":
@@ -30,4 +30,4 @@ signature:
     "name": "GPA", "required": true}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
   params: null
-utc_time_created: '2026-06-30 09:15:20.710882'
+utc_time_created: '2026-06-30 09:27:01.902812'
