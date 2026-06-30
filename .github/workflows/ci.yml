@@ -32,3 +32,21 @@ jobs:
         run: |
           cd MLProject
           mlflow run . --env-manager=local
+
+      - name: Get latest MLflow run_id
+        run: |
+          cd MLProject
+          RUN_ID=$(ls -t mlruns/0 | grep -v meta.yaml | grep -v datasets | head -n 1)
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+
+      - name: Upload to GitHub
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add MLProject/mlruns
+          git commit -m "ci: save mlflow artifacts from run ${{ env.RUN_ID }}" || echo "no changes to commit"
+          git push origin main
